@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!----<title>Login Form Design | CodeLab</title>---->
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+       
+    .one{
+      color: white;
+    }
+    .one:hover{
+      color:black;
+    }
+    .two{
+      text-decoration: none;
+      color: white;
+
+    }
+    .two:hover{
+      text-decoration: none;
+      color:gray;
+    }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar" style="background: linear-gradient(-135deg,#0074E1,#9900E0);">
+      <div class="container-fluid">
+      
+        <div class="navbar-header" >
+          <img style="height: 30px;width: 30px ;float:left;margin-top: 10px;" src="football.png">
+          <a  class="navbar-brand"  style="color: white;margin-left: 1px;  ">OBKS</a>
+        </div>
+      
+      
+        <ul class="nav navbar-nav">
+          <li class="active"><a class="one" href="#">About Us</a></li>
+          <li><a href="#" class="one">Contact Us</a></li>
+          <li><a href="#" class="one">Register</a></li>
+          <li><a href="#" class="one">Tariff</a></li>
+  
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="one"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          
+        </ul>
+      </div>
+    </nav> 
+
+
+    <div class="bod">
+    <div class="wrapper">
+      <div class="title">FEED BACK</div>
+      <form action="https://formsubmit.co/1bd1aeca9ac1ff5af6f6319d78539428" method="POST">
+        <div class="field">
+          <input type="text" id="name" name="name" required>
+          <label>Name</label>
+        </div>
+        <div class="field">
+          <input type="text" id="email" name="email" required>
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input id="msg" name="msg" type="textarea" style="width: 420px;height :80px" required>
+          <label>Feed back</label>
+        </div>
+       <br>
+        
+        <div class="field">
+          <input type="submit" value="SUBMIT" id="btn">
+        </div>
+        <div class="signup-link">THANK YOU</div>
+      </form>
+    </div>
+  </div>
+  
+  
+ <script src="feed.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  </body>
+</html>

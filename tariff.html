@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        
+        <style>
+            h2{
+                padding: 1%;
+            }
+            h2 a{
+                color: white;
+            }
+            h2 a:hover{
+                cursor:pointer;
+                color: black;
+            }
+            html, body{
+                height: 80%;
+            }
+            .wrapper 
+            {
+                min-height: 60%;
+                margin-left: 35%;
+                background: #efecf3;
+                width: 600px;
+                padding:1px;
+                box-shadow: 0px 0px 10px  #888888;
+            }
+            .content
+            {
+                margin-top: auto;
+                background-color: rgb(237, 193, 248);
+                width: 580px;
+                float: left;
+                padding:10px;
+                border:solid 0px;
+            }
+            .para{
+                color: rgb(47, 18, 151);
+                text-indent: 70px;
+                float: right;
+                text-align: center;
+            }
+            .list{
+                margin-top: 12%;
+                color: rgb(47, 18, 151);
+                text-indent: px;
+            }         
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar" style="background: linear-gradient(-135deg,#0074E1,#9900E0);">
+            <div class="container-fluid">
+            
+              <div class="navbar-header" >
+                <img style="height: 30px;width: 30px ;float:left;margin-top: 10px;" src="football.png">
+                <a  class="navbar-brand"  style="color: white;margin-left: 1px;  ">OBKS</a>
+              </div>
+            
+            
+              <ul class="nav navbar-nav">
+                <li class="active"><a class="one" href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+                <li><a href="#" class="one" style="color: white; text-decoration: none;">Gallery</a></li>
+                <li><a href="#" class="one" style="color: white; text-decoration: none;">Book Now</a></li>
+                <!-- <li><a href="about.html" class="one"style="color: white; text-decoration: none;">About us</a></li> -->
+        
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="1.html" class="one" style="color: white; text-decoration: none;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                
+              </ul>
+            </div>
+          </nav> 
+          <marquee>
+            <h2 style="color: red;">GST is applicable!!!</h2>
+        </marquee>
+        <div class="wrapper">        
+        <div class ="content">
+        <div class = "about" style="color: rgb(255, 31, 31); font-size:large;">Tariff Details</div></div>
+        <div class ="list">
+            <form style="font-size: large;margin-top: 80px;">
+            <label for="stadia_name">Stadia Name:   </label>
+            <select id="stadia_name" required style="font-size: medium;">
+                <option value="JN">NEHRU STADIUM</option>
+                <option value="=IG">PAVIN INTERNATIONAL CRICKET STADIUM</option>
+                <option value="MD">INDOOR SPORTS COMPLEX</option>
+                <option value="SP">VOC BASKETBALL STADIUM</option>
+                <option value="KS">BHARATHIYAR UNIVERSITY OUTDOOR STADIUM</option>
+                <option value="TK">TURF-KING'S SPORTS ARENA</option>
+                <option value="TK">RIAM SPORTS ARENA</option>
+                <option value="others" selected>--Select Stadium--</option>
+            </select><br></br>
+            <div class="et" style="height: 5px;"></div>
+            <label for="event_type">Event Type:   </label>
+            
+            <select id="event_type" required style="font-size: medium;">
+                <option value="s">Sports</option>
+                <option value="ns">Non-Sports</option>
+                <option value="others" selected>--Select Type--</option>
+            </select><br></br>
+            </div>
+            <div style="text-align:center;margin-top: 20px;">
+            <input type="submit" name="submit" value="Submit" style="font-size: medium;">
+            <input type="reset" name="reset" value="Reset" style="font-size: medium;"></div>
+        </div>
+        </form>
+        </div>
+        </div> 
+        <div class="footer" style="margin-top: 100px;box-sizing:border-box;padding:70px;background:linear-gradient(to bottom, #0099cc 0%, #6600cc 100%);text-align: end;">
+            <p style="color: white;font-size: large;">Phone number:
+                <a href="" style="color: white;font-size:medium;text-decoration: none;font-size: large;">9988776655</a>
+            </p>
+            <p style="color: white;font-size: large">E-mail:
+                <a href="https://www.gmail.com" style="color: white;font-size:medium;text-decoration: none;font-size: large">obks</a>@gmail.com</a>
+            </p>
+            
+        </div>
+    </body>
+</html>

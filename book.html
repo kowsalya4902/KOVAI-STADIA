@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='book.css' rel='stylesheet'>
+  <link rel="stylesheet" href="login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+    .one{
+      color: white;
+    }
+    .one:hover{
+      color:black;
+    }
+    .two{
+      text-decoration: none;
+      color: white;
+
+    }
+    .two:hover{
+      text-decoration: none;
+      color:gray;
+    }
+    body{
+      background-image: url("9.jpg");
+      background-size: cover;
+    }
+body {
+background-image:white;
+}
+
+.section {
+position: relative;
+height: 100vh;
+}
+
+.section .section-center {
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+#booking {
+font-family: 'Raleway', sans-serif;
+background-image: url("9.jpg");
+}
+
+.booking-form {
+position: relative;
+max-width: 642px;
+width: 100%;
+margin: auto;
+padding: 40px;
+overflow: hidden;
+background-size: cover;
+border-radius: 5px;
+z-index: 20;
+}
+
+.booking-form::before {
+content: '';
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+background: rgba(5, 5, 5, 0.7);
+z-index: -1;
+}
+
+.booking-form .form-header {
+text-align: center;
+position: relative;
+margin-bottom: 30px;
+}
+
+.booking-form .form-header h1 {
+font-weight: 700;
+text-transform: capitalize;
+font-size: 42px;
+margin: 0px;
+color: #fff;
+}
+
+.booking-form .form-group {
+position: relative;
+margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+background-color: rgba(255, 255, 255, 0.395);
+height: 60px;
+padding: 0px 25px;
+border: none;
+border-radius: 40px;
+color: #fff;
+-webkit-box-shadow: 0px 0px 0px 2px transparent;
+box-shadow: 0px 0px 0px 2px transparent;
+-webkit-transition: 0.2s;
+transition: 0.2s;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+color: #fff;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+color:#fff;
+}
+
+.booking-form .form-control::placeholder {
+color: #fff;
+}
+
+.booking-form .form-control:focus {
+-webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+box-shadow: 0px 0px 0px 2px #ff8846;
+}
+
+.booking-form input[type="date"].form-control {
+padding-top: 16px;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+color: #fff;
+}
+
+.booking-form input[type="date"].form-control+.form-label {
+opacity: 1;
+top: 10px;
+}
+
+.booking-form select.form-control {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+.booking-form select.form-control:invalid {
+color:#fff;
+}
+
+.booking-form select.form-control+.select-arrow {
+position: absolute;
+right: 15px;
+top: 50%;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+width: 32px;
+line-height: 32px;
+height: 32px;
+text-align: center;
+pointer-events: none;
+color:#fff;
+font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+content: '\279C';
+display: block;
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+
+.booking-form select.form-control option {
+color: #000;
+}
+
+.booking-form .form-label {
+position: absolute;
+top: -10px;
+left: 25px;
+opacity: 0;
+color: #fefaf8;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.3px;
+height: 15px;
+line-height: 15px;
+-webkit-transition: 0.2s all;
+transition: 0.2s all;
+}
+
+.booking-form .form-group.input-not-empty .form-control {
+padding-top: 16px;
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+opacity: 1;
+top: 10px;
+}
+
+.booking-form .submit-btn {
+color: #fff;
+background-color: #e35e0a;
+font-weight: 700;
+height: 60px;
+padding: 10px 30px;
+width: 100%;
+border-radius: 40px;
+border: none;
+text-transform: uppercase;
+font-size: 16px;
+letter-spacing: 1.3px;
+-webkit-transition: 0.2s all;
+transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+opacity: 0.9;
+}</style>
+<body style="background-color: white;">  
+  <nav class="navbar navbar" style="background: linear-gradient(-135deg,#0074E1,#9900E0);">
+    <div class="container-fluid">
+    
+      <div class="navbar-header" >
+        <img style="height: 30px;width: 30px ;float:left;margin-top: 10px;" src="football.png">
+        <a  class="navbar-brand"  style="color: white;margin-left: 1px;  ">OBKS</a>
+      </div>
+    
+    
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="one" href="about.html">About Us</a></li>
+        <li><a href="#" class="one">Gallery</a></li>
+        <li><a href="#" class="one">Book Now</a></li>
+        <li><a href="tariff.html" class="one">Tariff</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="1.html" class="one"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        
+      </ul>
+    </div>
+  </nav> 
+
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
+  <script type='text/javascript'></script> 
+  
+<div id="booking" class="section">
+<div class="section-center">
+<div class="container">
+<div class="row">
+<div class="booking-form">
+<div class="form-header">
+<h1>BOOK YOUR STADIUM</h1>
+</div>
+<form>
+<div class="form-group">
+<input class="form-control" type="text" placeholder="NAME">
+<span class="form-label">NAME</span>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+        <input class="form-control" type="email" placeholder="Enter your Email">
+        <span class="form-label">Email</span>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+        <input class="form-control" type="tel" placeholder="Enter your Phone">
+        <span class="form-label">Phone</span>
+    </div>
+  </div>
+  </div>
+<div class="row">
+<div class="col-md-6">
+  <div class="form-group">
+      <input class="form-control" type="date" required>
+      <span class="form-label">START DATE</span>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+      <input class="form-control" type="date" required>
+      <span class="form-label">END DATE</span>
+  </div>
+</div>
+</div>
+  <div class="form-group">
+  <input class="form-control" type="number" placeholder="TOTAL NO.OF DAYS">
+  <span class="form-label">NO.OF DAYS</span>
+</div>
+
+  <div class="form-group">
+      <select class="form-control" required>
+          <option value="" selected hidden>EVENT TYPE</option>
+          <option>SPORTS</option>
+          <option>NON-SPORTS</option>
+          
+      </select>
+    </div>
+  <div class="form-group">
+      <select class="form-control" required>
+          <option value="" selected hidden>GAME</option>
+          <option>ATHLETICS</option>
+          <option>BADMITION</option>
+          <option>BASKET BALL</option>
+          <option>CRICKET</option>
+          <option>FOOT BALL</option>
+          <option>HOCKEY</option>
+          <option>SHUTTLE</option>
+          <option>TENNIS</option>
+          <option>VOLLEY BALL</option>
+          
+      </select>
+      </div>   
+      <div class="form-group">
+        <select class="form-control" required>
+            <option value="" selected hidden>SELECT STADIUM</option>
+            <option value="JN">NEHRU STADIUM</option>
+                <option value="=IG">PAVIN INTERNATIONAL CRICKET STADIUM</option>
+                <option value="MD">INDOOR SPORTS COMPLEX</option>
+                <option value="SP">VOC BASKETBALL STADIUM</option>
+                <option value="KS">BHARATHIYAR UNIVERSITY OUTDOOR STADIUM</option>
+                <option value="TK">TURF-KING'S SPORTS ARENA</option>
+                <option value="TK">RIAM SPORTS ARENA</option>n>
+            
+        </select>
+  </div>
+<div class="form-btn">
+<button style="background: linear-gradient(-135deg,#0074E1,#9900E0);" class="submit-btn">Book Now</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div> 
+<a href="gallery.html" class="white-mode">VISIT GALLERY</a>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!----<title>Login Form Design | CodeLab</title>---->
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+    .one{
+      color: white;
+    }
+    .one:hover{
+      color:black;
+    }
+    .two{
+      text-decoration: none;
+      color: white;
+
+    }
+    .two:hover{
+      text-decoration: none;
+      color:gray;
+    }
+    body{
+      background-image: url("8.jpg");
+      background-size: cover;
+    }
+  </style>
+
+
+</div> 
+  </head>
+  <body>
+
+    
+      <nav class="navbar navbar" style="background: linear-gradient(-135deg,#0074E1,#9900E0);">
+        <div class="container-fluid">
+        
+          <div class="navbar-header" >
+            <img style="height: 30px;width: 30px ;float:left;margin-top: 10px;" src="football.png">
+            <a  class="navbar-brand"  style="color: white;margin-left: 1px;  ">OBKS</a>
+          </div>
+        
+        
+          <ul class="nav navbar-nav">
+            <li class="active"><a class="one" href="about.html">About Us</a></li>
+            <li><a href="#" class="one">Gallery</a></li>
+            <li><a href="#" class="one">Book Now</a></li>
+            <li><a href="tariff.html" class="one">Tariff</a></li>
+    
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="1.html" class="one"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            
+          </ul>
+        </div>
+      </nav> 
+
+
+    <div class="bod">
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <form  method="post" id="loginform">
+        <div class="field">
+          <input type="text" id="email" value="<?php echo $email; ?>" required>
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" id="pass" value="<?php echo $_POST['password']; ?>" required>
+          <label>Password</label>
+        </div>
+        
+        <div class="field">
+          <input type="submit" value="Login">
+        </div>
+        <div<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p></div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./login.js"></script>
+  </body>
+</html>
